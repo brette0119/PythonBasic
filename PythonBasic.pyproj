@@ -1,0 +1,138 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5c93c760-1bb4-49d5-9d00-18d74260de92</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>SQLalORM.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonBasic</Name>
+    <RootNamespace>PythonBasic</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Customers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataFrameToPlot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FunctionDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InsertDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MathUtility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyCustomers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyFunctions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OdbcQueryToDF.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonBasic.py" />
+    <Compile Include="SalesAnalysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SQLalORM.py" />
+    <Compile Include="SQLalConnectionDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestArray.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCasting.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCustomers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestDecorator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestDynamicParameters.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestFunctionModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestImport.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestmssqlDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestMyCustomersClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestNone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestOdbcConnect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestOdbcCursor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestPandas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestPlot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSales.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YahooDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+    <InterpreterReference Include="Global|PythonCore|3.8-32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="Python38\">
+      <Id>Python38</Id>
+      <Version>3.8</Version>
+      <Description>Python38 (Python 3.8 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
